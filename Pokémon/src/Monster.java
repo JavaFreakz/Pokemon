@@ -19,5 +19,15 @@ public class Monster {
 	Attack atk3;
 	Attack atk4;
 	
+	public static final String WILD_POKEMON = "wild";
 
+	public MonsterType getType()
+	{
+		return type;
+	}
+	
+	public String getTrainer() 
+	{
+		return originalTrainer;
+	}
 }
