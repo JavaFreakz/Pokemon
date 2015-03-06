@@ -1,5 +1,7 @@
 package Monsters;
 
+import Attacks.Attack;
+
 public class MonsterAttack {
 	Attack atk;
 	int lvlLearned;

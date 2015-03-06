@@ -1,4 +1,6 @@
-package Monsters;
+package Attacks;
+
+import Monsters.ElementType;
 
 public class Attack {
 	String name;

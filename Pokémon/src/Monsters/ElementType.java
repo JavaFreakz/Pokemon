@@ -4,6 +4,8 @@ public class ElementType {
 	
 	public static final ElementType BUG = new ElementType("Bug");
 	public static final ElementType DRAGON = new ElementType("Dragon");
+	public static final ElementType ELECTRIC = new ElementType("Electric");
+	public static final ElementType FIRE = new ElementType("Fire");
 	public static final ElementType FLYING = new ElementType("Flying");
 	public static final ElementType GHOST = new ElementType("Ghost");
 	public static final ElementType GRASS = new ElementType("Grass");

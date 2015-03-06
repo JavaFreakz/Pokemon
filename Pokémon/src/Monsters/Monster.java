@@ -1,6 +1,8 @@
 package Monsters;
 import java.util.List;
 
+import Attacks.Attack;
+
 
 public class Monster {
 	
