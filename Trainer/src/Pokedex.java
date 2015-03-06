@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import Monsters.Monster;
+
 
 public class Pokedex {
 

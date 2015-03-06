@@ -1,3 +1,4 @@
+package Monsters;
 
 public class Attack {
 	String name;
@@ -5,6 +6,7 @@ public class Attack {
 	
 	int accuracy;
 	int speed;
+	int defaultPP;
 	//SpecialEffect;
 	//inUse Video;
 	

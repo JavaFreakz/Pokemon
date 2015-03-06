@@ -1,3 +1,5 @@
+import Monsters.Monster;
+
 
 public class Trainer {
 

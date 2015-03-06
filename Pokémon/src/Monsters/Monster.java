@@ -1,14 +1,34 @@
+package Monsters;
+import java.util.List;
+
 
 public class Monster {
+	
+	public enum StatusCondition {
+		NO_STATUS_CONDITION,
+		FROZEN,
+		PARALYZED,
+		BURNED,
+		POISONED
+	}
+	
+	public enum AfflictionTypes {
+		CONFUSED,
+		CURSED
+	}
+	
 	String name;
 	MonsterType type;
 	Item itemHeld;
 	String gender;
 	boolean shiny;
 	String originalTrainer;
+	StatusCondition status;
+	List<AfflictionTypes> afflictions;
 	int monsterlvl;
 	int experience;
 	int health;
+	int fullHealth;
 	int attack;
 	int SpecialAttack;
 	int defense;
