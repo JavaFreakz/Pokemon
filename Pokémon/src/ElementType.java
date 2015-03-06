@@ -4,4 +4,5 @@ public class ElementType {
 	ElementType[] weakAgainst;
 	ElementType[] superAgainst;
 	boolean noEffect;
+	weaterEffect;
 }
