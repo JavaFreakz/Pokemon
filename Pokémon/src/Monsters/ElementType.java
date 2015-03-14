@@ -11,6 +11,7 @@ public class ElementType {
 	public static final ElementType GHOST = new ElementType("Ghost");
 	public static final ElementType GRASS = new ElementType("Grass");
 	public static final ElementType GROUND = new ElementType("Ground");
+	public static final ElementType ICE = new ElementType("Ice");
 	public static final ElementType NORMAL = new ElementType("Normal");
 	public static final ElementType POISON = new ElementType("Poison");
 	public static final ElementType PSYCHIC = new ElementType("Psychic");
