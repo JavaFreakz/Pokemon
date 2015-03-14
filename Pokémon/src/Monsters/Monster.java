@@ -11,7 +11,8 @@ public class Monster {
 		FROZEN,
 		PARALYZED,
 		BURNED,
-		POISONED
+		POISONED,
+		SLEEP
 	}
 	
 	public enum AfflictionTypes {

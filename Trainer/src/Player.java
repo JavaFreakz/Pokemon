@@ -1,4 +1,5 @@
-import region.Map;
+import region.KantoMap;
+import region.LeagueMap;
 import Monsters.Monster;
 
 
@@ -16,7 +17,8 @@ public class Player extends Trainer {
 		
 		try
 		{
-			super.initialize(Trainer.TrainerType.Player, "Ash", 0, Map.StartLocation, Map.StartDirection, bench);
+			LeagueMap leagueMap = new KantoMap();
+			super.initialize(Trainer.TrainerType.Player, "Ash", 0, leagueMap.StartLocation, leagueMap.StartDirection, bench);
 		} finally {
 			trainerId = 1;
 		}

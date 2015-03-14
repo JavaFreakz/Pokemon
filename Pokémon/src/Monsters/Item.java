@@ -11,6 +11,7 @@ public class Item {
 		Thunderstone,
 		Moonstone,
 		Leafstone,
+		Firestone,
 		RunningShoes,
 		Bicycle,
 		SilphScope,
