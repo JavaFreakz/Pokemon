@@ -1,5 +1,10 @@
 package Monsters;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import Attacks.Attack;
+
 public class MonsterType {
 	
 	public static final MonsterType Bulbasaur = new MonsterType(1, "Bulbasaur", ElementType.GRASS, null, 2, 16);
@@ -65,10 +70,10 @@ public class MonsterType {
 //	public static final MonsterType Poliwhirl   = new MonsterType(61, "Poliwhirl",   ElementType.WATER, null, 62, 100);
 	public static final MonsterType Poliwrath  = new MonsterType(62, "Poliwrath",  ElementType.WATER, ElementType.FIGHTING, -1, 100);
 	public static final MonsterType Abra = new MonsterType(63, "Abra", ElementType.PSYCHIC, null, 64, 16);
-	public static final MonsterType Kadabra   = new MonsterType(64, "Kadabra",   ElementType.PSYCHIC, null, 65, 100);
+//	public static final MonsterType Kadabra   = new MonsterType(64, "Kadabra",   ElementType.PSYCHIC, null, 65, 100);
 	public static final MonsterType Alakazam  = new MonsterType(65, "Alakazam",  ElementType.PSYCHIC, null, -1, 100);
 	public static final MonsterType Machop = new MonsterType(66, "Machop", ElementType.FIGHTING, null, 67, 16);
-	public static final MonsterType Machoke   = new MonsterType(67, "Machoke",   ElementType.FIGHTING, null, 68, 100);
+//	public static final MonsterType Machoke   = new MonsterType(67, "Machoke",   ElementType.FIGHTING, null, 68, 100);
 	public static final MonsterType Machamp  = new MonsterType(68, "Machamp",  ElementType.FIGHTING, null, -1, 100);
 	public static final MonsterType Bellsprout = new MonsterType(69, "Bellsprout", ElementType.GRASS, ElementType.POISON, 70, 21);
 //	public static final MonsterType Weepinbell   = new MonsterType(70, "Weepinbell",   ElementType.GRASS, ElementType.POISON, 71, 100);
@@ -76,7 +81,7 @@ public class MonsterType {
 	public static final MonsterType Tentacool = new MonsterType(72, "Tentacool", ElementType.WATER, null, 73, 30);
 	public static final MonsterType Tentacruel   = new MonsterType(73, "Tentacruel",   ElementType.WATER, null, -1, 100);
 	public static final MonsterType Geodude = new MonsterType(74, "Geodude", ElementType.ROCK, ElementType.GROUND, 75, 25);
-	public static final MonsterType Graveler   = new MonsterType(75, "Graveler",   ElementType.ROCK, ElementType.GROUND,76, 100);
+//	public static final MonsterType Graveler   = new MonsterType(75, "Graveler",   ElementType.ROCK, ElementType.GROUND,76, 100);
 	public static final MonsterType Golem  = new MonsterType(76, "Golem",  ElementType.ROCK, ElementType.GROUND, -1, 100);
 	public static final MonsterType Ponyta   = new MonsterType(77, "Ponyta",   ElementType.FIRE, null, 78, 40);
 	public static final MonsterType Rapidash  = new MonsterType(78, "Rapidash",  ElementType.FIRE, null, -1, 100);
@@ -94,7 +99,7 @@ public class MonsterType {
 //	public static final MonsterType Shellder   = new MonsterType(90, "Shellder",   ElementType.WATER, null, 91, 100);
 	public static final MonsterType Cloyster   = new MonsterType(91, "Cloyster",   ElementType.WATER, ElementType.ICE, -1, 100);
 	public static final MonsterType Ghastly = new MonsterType(92, "Ghastly", ElementType.GHOST, ElementType.POISON, 93, 25);
-	public static final MonsterType Haunter   = new MonsterType(93, "Haunter",   ElementType.GHOST, ElementType.POISON, 94, 100);
+//	public static final MonsterType Haunter   = new MonsterType(93, "Haunter",   ElementType.GHOST, ElementType.POISON, 94, 100);
 	public static final MonsterType Gengar  = new MonsterType(94, "Gengar",  ElementType.GHOST, ElementType.POISON, -1, 100);
 	public static final MonsterType Onix   = new MonsterType(95, "Onix",   ElementType.ROCK, ElementType.GROUND, -1, 100);
 	public static final MonsterType Drowzee   = new MonsterType(96, "Drowzee",   ElementType.PSYCHIC, null, 97, 26);
@@ -163,12 +168,13 @@ public class MonsterType {
 	}
 	
 	private String name;
-	private int evolvesInto;
+	protected int evolvesInto;
+	protected EvolutionType evolutionTrigger;
 	private int levelUpAt;
 	private ElementType type2;
 	private ElementType type;
 	private int number;
-	private MonsterAttack[] attackList;
+	private List<Attack> attackList = new ArrayList<>();
 	
 	public int getNumber()
 	{
@@ -185,29 +191,24 @@ public class MonsterType {
 		type2 = elem2;
 		evolvesInto = becomes;
 		levelUpAt = lvlAt;
-	}
-	
-	public void setAttack(int attackId, MonsterAttack att)
-	{
-		if (attackId < 4)
+		if (evolvesInto > 0)
 		{
-			attackList[attackId] = att;
+			evolutionTrigger = EvolutionType.LEVEL_UP;  // default; override if necessary
+		} else 
+		{
+			evolutionTrigger = EvolutionType.NONE;
 		}
 	}
 	
-	public static void initialize()
+	protected void setAttacks(List<Attack> att)
 	{
-		//TODO: add attacks/levels for bulbasaur and ivysaur
+		attackList = att;
 		
-		//TODO: add attacks/levels for all remaining pokemon types
-		
-//		Kadabra.evolutionTrigger = EvolutionType.TRADE;
-//
-//		Machoke.evolutionTrigger = EvolutionType.TRADE;
-//
-//		Graveler.evolutionTrigger = EvolutionType.TRADE;
-//
-//		Haunter.evolutionTrigger = EvolutionType.TRADE;
+	}
+	
+	public String getName()
+	{
+		return name;
 	}
 
 	public int getId() {
