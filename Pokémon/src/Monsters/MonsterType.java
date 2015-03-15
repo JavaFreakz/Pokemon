@@ -26,26 +26,26 @@ public class MonsterType {
 	public static final MonsterType Fearow  = new MonsterType(22, "Fearow", ElementType.NORMAL,  ElementType.FLYING, -1, 100);
 	public static final MonsterType Ekans   = new MonsterType(23, "Ekans", ElementType.POISON,   null, 24, 22);
 	public static final MonsterType Arbok  = new MonsterType(24, "Arbok", ElementType.POISON,  null, -1, 100);
-	public static final MonsterType Pikachu   = new MonsterType(25, "Pikachu", ElementType.ELECTRIC,   null, 26, 1);
+//	public static final MonsterType Pikachu   = new MonsterType(25, "Pikachu", ElementType.ELECTRIC,   null, 26, 100);
 	public static final MonsterType Raichu  = new MonsterType(26, "Raichu", ElementType.ELECTRIC,  null, -1, 100);
 	public static final MonsterType Sandshrew   = new MonsterType(27, "Sandshrew", ElementType.GROUND,   null, 28, 22);
 	public static final MonsterType Sandslash  = new MonsterType(28, "Sandslash", ElementType.GROUND,  null, -1, 100);
 	public static final MonsterType NidoranF = new MonsterType(29, "NidoranF", ElementType.POISON, null, 30, 16);
-	public static final MonsterType Nidorina   = new MonsterType(30, "Nidorina",   ElementType.POISON, null, 31, 100);
+//	public static final MonsterType Nidorina   = new MonsterType(30, "Nidorina",   ElementType.POISON, null, 31, 100);
 	public static final MonsterType Nidoqueen  = new MonsterType(31, "Nidoqueen",  ElementType.POISON, ElementType.GROUND, -1, 100);
 	public static final MonsterType NidoranM = new MonsterType(32, "NidoranM", ElementType.POISON, null, 30, 16);
-	public static final MonsterType Nidorino   = new MonsterType(33, "Nidorino",   ElementType.POISON, null, 31, 100);
+//	public static final MonsterType Nidorino   = new MonsterType(33, "Nidorino",   ElementType.POISON, null, 31, 100);
 	public static final MonsterType Nidoking  = new MonsterType(34, "Nidoking",  ElementType.POISON, ElementType.GROUND, -1, 100);
-	public static final MonsterType Clefairy   = new MonsterType(35, "Clefairy",   ElementType.NORMAL, null, 36, 100);
+//	public static final MonsterType Clefairy   = new MonsterType(35, "Clefairy",   ElementType.NORMAL, null, 36, 100);
 	public static final MonsterType Clefable  = new MonsterType(36, "Clefable",  ElementType.NORMAL, null, -1, 100);
-	public static final MonsterType Vulpix   = new MonsterType(37, "Vulpix",   ElementType.FIRE, null, 38, 100);
+//	public static final MonsterType Vulpix   = new MonsterType(37, "Vulpix",   ElementType.FIRE, null, 38, 100);
 	public static final MonsterType Ninetales  = new MonsterType(38, "Ninetales",  ElementType.FIRE, null, -1, 100);
-	public static final MonsterType Jigglypuff   = new MonsterType(39, "Jigglypuff",   ElementType.NORMAL, null, 40, 100);
+//	public static final MonsterType Jigglypuff   = new MonsterType(39, "Jigglypuff",   ElementType.NORMAL, null, 40, 100);
 	public static final MonsterType Wigglytuff  = new MonsterType(40, "Wigglytuff",  ElementType.NORMAL, null, -1, 100);
 	public static final MonsterType Zubat   = new MonsterType(41, "Zubat",   ElementType.POISON, ElementType.FLYING, 42, 22);
 	public static final MonsterType Golbat  = new MonsterType(42, "Golbat",  ElementType.POISON, ElementType.FLYING, -1, 100);
 	public static final MonsterType Oddish = new MonsterType(43, "Oddish", ElementType.GRASS, ElementType.POISON, 44, 21);
-	public static final MonsterType Gloom   = new MonsterType(44, "Gloom",   ElementType.GRASS, ElementType.POISON, 45, 100);
+//	public static final MonsterType Gloom   = new MonsterType(44, "Gloom",   ElementType.GRASS, ElementType.POISON, 45, 100);
 	public static final MonsterType Vileplume  = new MonsterType(45, "Vileplume",  ElementType.GRASS, ElementType.POISON, -1, 100);
 	public static final MonsterType Paras   = new MonsterType(46, "Paras",   ElementType.BUG, ElementType.GRASS, 47, 24);
 	public static final MonsterType Parasect  = new MonsterType(47, "Parasect",  ElementType.BUG, ElementType.GRASS, -1, 100);
@@ -59,10 +59,10 @@ public class MonsterType {
 	public static final MonsterType Golduck  = new MonsterType(55, "Golduck",  ElementType.WATER, null, -1, 100);
 	public static final MonsterType Mankey   = new MonsterType(56, "Mankey",   ElementType.FIGHTING, null, 57, 28);
 	public static final MonsterType Primeape  = new MonsterType(57, "Primeape",  ElementType.FIGHTING, null, -1, 100);
-	public static final MonsterType Growlithe = new MonsterType(58, "Growlithe",   ElementType.FIGHTING, null, 59, 100);
+//	public static final MonsterType Growlithe = new MonsterType(58, "Growlithe",   ElementType.FIGHTING, null, 59, 100);
 	public static final MonsterType Arcanine  = new MonsterType(59, "Arcanine",  ElementType.FIGHTING, null, -1, 100);
 	public static final MonsterType Poliwag = new MonsterType(60, "Poliwag", ElementType.WATER, null, 61, 25);
-	public static final MonsterType Poliwhirl   = new MonsterType(61, "Poliwhirl",   ElementType.WATER, null, 62, 100);
+//	public static final MonsterType Poliwhirl   = new MonsterType(61, "Poliwhirl",   ElementType.WATER, null, 62, 100);
 	public static final MonsterType Poliwrath  = new MonsterType(62, "Poliwrath",  ElementType.WATER, ElementType.FIGHTING, -1, 100);
 	public static final MonsterType Abra = new MonsterType(63, "Abra", ElementType.PSYCHIC, null, 64, 16);
 	public static final MonsterType Kadabra   = new MonsterType(64, "Kadabra",   ElementType.PSYCHIC, null, 65, 100);
@@ -71,7 +71,7 @@ public class MonsterType {
 	public static final MonsterType Machoke   = new MonsterType(67, "Machoke",   ElementType.FIGHTING, null, 68, 100);
 	public static final MonsterType Machamp  = new MonsterType(68, "Machamp",  ElementType.FIGHTING, null, -1, 100);
 	public static final MonsterType Bellsprout = new MonsterType(69, "Bellsprout", ElementType.GRASS, ElementType.POISON, 70, 21);
-	public static final MonsterType Weepinbell   = new MonsterType(70, "Weepinbell",   ElementType.GRASS, ElementType.POISON, 71, 100);
+//	public static final MonsterType Weepinbell   = new MonsterType(70, "Weepinbell",   ElementType.GRASS, ElementType.POISON, 71, 100);
 	public static final MonsterType Victreebel  = new MonsterType(71, "Victreebel",  ElementType.GRASS, ElementType.POISON, -1, 100);
 	public static final MonsterType Tentacool = new MonsterType(72, "Tentacool", ElementType.WATER, null, 73, 30);
 	public static final MonsterType Tentacruel   = new MonsterType(73, "Tentacruel",   ElementType.WATER, null, -1, 100);
@@ -91,7 +91,7 @@ public class MonsterType {
 	public static final MonsterType Dewgong   = new MonsterType(87, "Dewgong",   ElementType.WATER, ElementType.ICE, -1, 100);
 	public static final MonsterType Grimer   = new MonsterType(88, "Grimer",   ElementType.POISON, null, 89, 38);
 	public static final MonsterType Muk   = new MonsterType(89, "Muk",   ElementType.POISON, null, -1, 100);
-	public static final MonsterType Shellder   = new MonsterType(90, "Shellder",   ElementType.WATER, null, 91, 100);
+//	public static final MonsterType Shellder   = new MonsterType(90, "Shellder",   ElementType.WATER, null, 91, 100);
 	public static final MonsterType Cloyster   = new MonsterType(91, "Cloyster",   ElementType.WATER, ElementType.ICE, -1, 100);
 	public static final MonsterType Ghastly = new MonsterType(92, "Ghastly", ElementType.GHOST, ElementType.POISON, 93, 25);
 	public static final MonsterType Haunter   = new MonsterType(93, "Haunter",   ElementType.GHOST, ElementType.POISON, 94, 100);
@@ -103,7 +103,7 @@ public class MonsterType {
 	public static final MonsterType Kingler   = new MonsterType(99, "Kingler",   ElementType.WATER, null, -1, 100);
 	public static final MonsterType Voltorb   = new MonsterType(100, "Voltorb",   ElementType.ELECTRIC, null, 99, 30);
 	public static final MonsterType Electrode   = new MonsterType(101, "Electrode",   ElementType.ELECTRIC, null, -1, 100);
-	public static final MonsterType Exeggcute   = new MonsterType(102, "Exeggcute",   ElementType.GRASS, ElementType.PSYCHIC, 103, 100);
+//	public static final MonsterType Exeggcute   = new MonsterType(102, "Exeggcute",   ElementType.GRASS, ElementType.PSYCHIC, 103, 100);
 	public static final MonsterType Exeggutor   = new MonsterType(103, "Exeggutor",   ElementType.GRASS, ElementType.PSYCHIC, -1, 100);
 	public static final MonsterType Cubone   = new MonsterType(104, "Cubone",   ElementType.GROUND, null, 105, 28);
 	public static final MonsterType Marowak   = new MonsterType(105, "Marowak",   ElementType.GROUND, null, -1, 100);
@@ -121,7 +121,7 @@ public class MonsterType {
 	public static final MonsterType Seadra   = new MonsterType(117, "Seadra",   ElementType.WATER, null, -1, 100);
 	public static final MonsterType Goldeen   = new MonsterType(118, "Goldeen",   ElementType.WATER, null, 119, 33);
 	public static final MonsterType Seaking   = new MonsterType(119, "Seaking",   ElementType.WATER, null, -1, 100);
-	public static final MonsterType Staryu   = new MonsterType(120, "Staryu",   ElementType.WATER, null, 121, 100);
+//	public static final MonsterType Staryu   = new MonsterType(120, "Staryu",   ElementType.WATER, null, 121, 100);
 	public static final MonsterType Starmie   = new MonsterType(121, "Starmie",   ElementType.WATER, ElementType.PSYCHIC, -1, 100);
 	public static final MonsterType MrMime   = new MonsterType(122, "Mr. Mime",   ElementType.PSYCHIC, null, -1, 100);
 	public static final MonsterType Scyther   = new MonsterType(123, "Scyther",   ElementType.BUG, ElementType.FLYING, -1, 100);
@@ -134,7 +134,7 @@ public class MonsterType {
 	public static final MonsterType Gyrados   = new MonsterType(130, "Gyrados",   ElementType.WATER, ElementType.FLYING, -1, 100);
 	public static final MonsterType Lapras   = new MonsterType(131, "Lapras",   ElementType.WATER, ElementType.ICE, -1, 100);
 	public static final MonsterType Ditto   = new MonsterType(132, "Ditto",   ElementType.NORMAL, null, -1, 100);
-	public static final MonsterType Eevee   = new MonsterType(133, "Eevee",   ElementType.NORMAL, null, -1, 100);
+//	public static final MonsterType Eevee   = new MonsterType(133, "Eevee",   ElementType.NORMAL, null, -1, 100);
 	public static final MonsterType Vaporeon   = new MonsterType(134, "Vaporeon",   ElementType.NORMAL, null, -1, 100);
 	public static final MonsterType Jolteon   = new MonsterType(135, "Jolteon",   ElementType.NORMAL, null, -1, 100);
 	public static final MonsterType Flareon   = new MonsterType(136, "Flareon",   ElementType.NORMAL, null, -1, 100);
@@ -156,7 +156,6 @@ public class MonsterType {
 	
 	public enum EvolutionType {
 		LEVEL_UP,
-		FRIENDSHIP,
 		ITEM,
 		TRADE,
 		TRADE_WITH_ITEM,
@@ -170,8 +169,6 @@ public class MonsterType {
 	private ElementType type;
 	private int number;
 	private MonsterAttack[] attackList;
-	private EvolutionType evolutionTrigger;
-	private Item.ItemType evolutionItem;
 	
 	public int getNumber()
 	{
@@ -188,7 +185,6 @@ public class MonsterType {
 		type2 = elem2;
 		evolvesInto = becomes;
 		levelUpAt = lvlAt;
-		evolutionTrigger = EvolutionType.LEVEL_UP;  // default.
 	}
 	
 	public void setAttack(int attackId, MonsterAttack att)
@@ -204,66 +200,17 @@ public class MonsterType {
 		//TODO: add attacks/levels for bulbasaur and ivysaur
 		
 		//TODO: add attacks/levels for all remaining pokemon types
-		Venusaur.evolutionTrigger =  EvolutionType.NONE;
 		
-		Charizard.evolutionTrigger =  EvolutionType.NONE;
-		
-		Blastoise.evolutionTrigger =  EvolutionType.NONE;
-		
-		Butterfree.evolutionTrigger =  EvolutionType.NONE;
-		
-		Beedrill.evolutionTrigger =  EvolutionType.NONE;
-		
-		Pidgeot.evolutionTrigger =  EvolutionType.NONE;
-		
-		Raticate.evolutionTrigger =  EvolutionType.NONE;
-		
-		Fearow.evolutionTrigger =  EvolutionType.NONE;
-		
-		Arbok.evolutionTrigger =  EvolutionType.NONE;
-		
-		Pikachu.evolutionTrigger =  EvolutionType.ITEM;
-		Pikachu.evolutionItem = Item.ItemType.Thunderstone;
-		
-		Nidorina.evolutionTrigger = EvolutionType.ITEM;
-		Nidorina.evolutionItem = Item.ItemType.Moonstone;
-		
-		Clefairy.evolutionTrigger = EvolutionType.ITEM;
-		Clefairy.evolutionItem = Item.ItemType.Moonstone;
-		
-		Vulpix.evolutionTrigger = EvolutionType.ITEM;
-		Vulpix.evolutionItem = Item.ItemType.Firestone;
-		
-		Jigglypuff.evolutionTrigger = EvolutionType.ITEM;
-		Jigglypuff.evolutionItem = Item.ItemType.Moonstone;
-		
-		Gloom.evolutionTrigger = EvolutionType.ITEM;
-		Gloom.evolutionItem = Item.ItemType.Leafstone;
-		
-		Growlithe.evolutionTrigger = EvolutionType.ITEM;
-		Growlithe.evolutionItem = Item.ItemType.Firestone;
-		
-		Poliwhirl.evolutionTrigger = EvolutionType.ITEM;
-		Poliwhirl.evolutionItem = Item.ItemType.Waterstone;
-		
-		Kadabra.evolutionTrigger = EvolutionType.TRADE;
+//		Kadabra.evolutionTrigger = EvolutionType.TRADE;
+//
+//		Machoke.evolutionTrigger = EvolutionType.TRADE;
+//
+//		Graveler.evolutionTrigger = EvolutionType.TRADE;
+//
+//		Haunter.evolutionTrigger = EvolutionType.TRADE;
+	}
 
-		Machoke.evolutionTrigger = EvolutionType.TRADE;
-		
-		Weepinbell.evolutionTrigger = EvolutionType.ITEM;
-		Weepinbell.evolutionItem = Item.ItemType.Leafstone;
-
-		Graveler.evolutionTrigger = EvolutionType.TRADE;
-		
-		Shellder.evolutionTrigger = EvolutionType.ITEM;
-		Shellder.evolutionItem = Item.ItemType.Waterstone;
-
-		Haunter.evolutionTrigger = EvolutionType.TRADE;
-		
-		Exeggcute.evolutionTrigger = EvolutionType.ITEM;
-		Exeggcute.evolutionItem = Item.ItemType.Leafstone;
-		
-		Staryu.evolutionTrigger = EvolutionType.ITEM;
-		Staryu.evolutionItem = Item.ItemType.Waterstone;
+	public int getId() {
+		return number;
 	}
 }
