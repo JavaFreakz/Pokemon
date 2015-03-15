@@ -138,6 +138,21 @@ public class MonsterType {
 	public static final MonsterType Vaporeon   = new MonsterType(134, "Vaporeon",   ElementType.NORMAL, null, -1, 100);
 	public static final MonsterType Jolteon   = new MonsterType(135, "Jolteon",   ElementType.NORMAL, null, -1, 100);
 	public static final MonsterType Flareon   = new MonsterType(136, "Flareon",   ElementType.NORMAL, null, -1, 100);
+	public static final MonsterType Porygon   = new MonsterType(137, "Porygon",   ElementType.NORMAL, null, -1, 100);
+	public static final MonsterType Omanyte   = new MonsterType(138, "Omanyte",   ElementType.ROCK, ElementType.WATER, 139, 40);
+	public static final MonsterType Omastar   = new MonsterType(139, "Omastar",   ElementType.ROCK, ElementType.WATER, -1, 100);
+	public static final MonsterType Kabuto   = new MonsterType(140, "Kabuto",   ElementType.ROCK, ElementType.WATER, 141, 40);
+	public static final MonsterType Kabutops   = new MonsterType(141, "Kabutops",   ElementType.ROCK, ElementType.WATER, -1, 100);
+	public static final MonsterType Aerodactyl   = new MonsterType(142, "Aerodactyl",   ElementType.ROCK, ElementType.FLYING, -1, 100);
+	public static final MonsterType Snorlax   = new MonsterType(143, "Snorlax",   ElementType.NORMAL, null, -1, 100);
+	public static final MonsterType Articuno   = new MonsterType(144, "Articuno",   ElementType.ICE, ElementType.FLYING, -1, 100);
+	public static final MonsterType Zapdos   = new MonsterType(145, "Zapdos",   ElementType.ELECTRIC, ElementType.FLYING, -1, 100);
+	public static final MonsterType Moltres   = new MonsterType(146, "Moltres",   ElementType.FIRE, ElementType.FLYING, -1, 100);
+	public static final MonsterType Dratini   = new MonsterType(147, "Dratini",   ElementType.DRAGON, null, 148, 30);
+	public static final MonsterType Dragonair   = new MonsterType(148, "Dragonair",   ElementType.DRAGON, null, 149, 55);
+	public static final MonsterType Dragonite   = new MonsterType(149, "Dragonite",   ElementType.DRAGON, ElementType.FLYING, -1, 100);
+	public static final MonsterType Mewtwo   = new MonsterType(150, "Mewtwo",   ElementType.PSYCHIC, null, -1, 100);
+	public static final MonsterType Mew   = new MonsterType(151, "Mew",   ElementType.PSYCHIC, null, -1, 100);
 	
 	public enum EvolutionType {
 		LEVEL_UP,

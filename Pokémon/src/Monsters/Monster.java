@@ -26,17 +26,20 @@ public class Monster {
 	String gender;
 	boolean shiny;
 	String originalTrainer;
+	String currentTrainer;
 	StatusCondition status;
 	List<AfflictionTypes> afflictions;
 	int monsterlvl;
-	int experience;
-	int health;
-	int fullHealth;
+	int experience;               // Amount so far (all levels combined)
+	int nextLevelExperience;      // Amount to achieve before leveling up
+	int experienceGiven;          // Amount an ooposing pokemon gains if this one is deleted
+	int health;                   // current HP
+	int fullHealth;               // full HP
 	int attack;
-	int SpecialAttack;
+	int specialAttack;
 	int defense;
-	int Specialdefense;
-	int Evasiveness;
+	int specialdefense;
+	int evasiveness;
 	Attack atk1;
 	Attack atk2;
 	Attack atk3;
