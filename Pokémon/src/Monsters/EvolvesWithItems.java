@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Attacks.Attack;
+import Attacks.AttackLevel;
 import Monsters.MonsterType.EvolutionType;
 
 public class EvolvesWithItems extends MonsterType {
@@ -50,7 +51,7 @@ public class EvolvesWithItems extends MonsterType {
 		}
 	}
 
-	protected void setAttackList(List<Attack> atts)
+	protected void setAttackList(List<AttackLevel> atts)
 	{
 		super.setAttacks(atts);
 	}

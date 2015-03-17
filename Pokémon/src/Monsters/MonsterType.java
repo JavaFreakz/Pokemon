@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Attacks.Attack;
+import Attacks.AttackLevel;
 
 public class MonsterType {
 	
@@ -174,7 +175,7 @@ public class MonsterType {
 	private ElementType type2;
 	private ElementType type;
 	private int number;
-	private List<Attack> attackList = new ArrayList<>();
+	private List<AttackLevel> attackList = new ArrayList<>();
 	
 	public int getNumber()
 	{
@@ -200,7 +201,7 @@ public class MonsterType {
 		}
 	}
 	
-	protected void setAttacks(List<Attack> att)
+	protected void setAttacks(List<AttackLevel> att)
 	{
 		attackList = att;
 		
