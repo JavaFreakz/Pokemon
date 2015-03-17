@@ -1,5 +1,8 @@
 package Attacks;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import Monsters.ElementType;
 
 public class Attack {
@@ -14,12 +17,20 @@ public class Attack {
 	public static final Attack Doubleslap = new Attack("Doubleslap", 85, 15, ElementType.NORMAL, 10, false);
 	public static final Attack Encore = new Attack("Encore", 100, 0, ElementType.NORMAL, 5, true);
 	public static final Attack Growl = new Attack("Growl", 100, 0, ElementType.NORMAL, 20, true);
+	public static final Attack Growth = new Attack("Growth", 100, 0, ElementType.NORMAL, 40, true);
+	public static final Attack LeechSeed = new Attack("Leech Seed", 90, 0, ElementType.GRASS, 10, true);
 	public static final Attack LightScreen = new Attack("Light Screen", 100, 0, ElementType.PSYCHIC, 30, true);
 	public static final Attack Metronome = new Attack("Metronome", 100, 0, ElementType.NORMAL, 10, true);
 	public static final Attack Minimize = new Attack("Minimize", 100, 0, ElementType.NORMAL, 20, true);
-	public static final Attack Moonlight = new Attack("Moonlight", 100, 0, ElementType.NORMAL, 5, true);
+	public static final Attack Moonlight = new Attack("Moonlight", 75, 0, ElementType.POISON, 35, true);
+	public static final Attack Poisonpowder = new Attack("Poisonpowder", 100, 40, ElementType.NORMAL, 40, false);
 	public static final Attack Pound = new Attack("Pound", 100, 40, ElementType.NORMAL, 40, false);
+	public static final Attack RazorLeaf = new Attack("Razor Leaf", 95, 55, ElementType.GRASS, 25, true);
 	public static final Attack Sing = new Attack("Sing", 55, 0, ElementType.NORMAL, 15, true);
+	public static final Attack SleepPowder = new Attack("Sleep Powder", 75, 0, ElementType.GRASS, 15, true);
+	public static final Attack Solarbeam = new Attack("Solarbeam", 100, 120, ElementType.GRASS, 10, false);
+	public static final Attack Tackle = new Attack("Tackle", 95, 35, ElementType.NORMAL, 35, false);
+	public static final Attack VineWhip = new Attack("Vine Whip", 100, 35, ElementType.GRASS, 10, false);
 	
 	String name;
 	ElementType type;

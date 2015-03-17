@@ -215,4 +215,22 @@ public class MonsterType {
 	public int getId() {
 		return number;
 	}
+	
+	public static void initialize()
+	{
+		List<AttackLevel> att = new ArrayList<>();
+		att.add(new AttackLevel(Attack.Tackle, 1));
+		att.add(new AttackLevel(Attack.Growl, 1));
+		att.add(new AttackLevel(Attack.LeechSeed, 13));
+		att.add(new AttackLevel(Attack.VineWhip, 13));
+		att.add(new AttackLevel(Attack.Poisonpowder, 20));
+		att.add(new AttackLevel(Attack.RazorLeaf, 27));
+		att.add(new AttackLevel(Attack.Growth, 34));
+		att.add(new AttackLevel(Attack.SleepPowder, 41));
+		att.add(new AttackLevel(Attack.Solarbeam, 48));
+		
+		Bulbasaur.setAttacks(att);
+		
+		//TODO set up possible TMs and HMs
+	}
 }
