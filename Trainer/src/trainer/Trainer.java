@@ -1,3 +1,4 @@
+package trainer;
 import region.Direction;
 import region.Location;
 import Monsters.Monster;
@@ -82,4 +83,29 @@ public class Trainer {
 	public void setType(TrainerType type) {
 		this.type = type;
 	}
+	
+	// Automation of trainer moves:
+	//
+	// boolean newMonster = false;
+	// if (t2monster HP == 0)
+//	{
+//		get next t2mon
+//		newMonster = true;
+//	}
+//	if (t1 super vs t2)
+//	{
+//		if have non-super
+//		{
+//			get new t2 monster
+//    	    newMonster = true;
+//		}
+//	}
+//	if newMonster 
+//	   return switchTo action;
+//	if t2 has status && have a healer
+//	   return use item action
+//	if super attack available, use strongest
+//	if type attack available, use strongest
+//	use strongest.   
+//	(for wild battles, randomize attack)
 }

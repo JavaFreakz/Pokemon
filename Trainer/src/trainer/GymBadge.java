@@ -1,3 +1,4 @@
+package trainer;
 
 public class GymBadge {
 

@@ -1,3 +1,4 @@
+package trainer;
 import java.util.List;
 
 import Monsters.Monster;

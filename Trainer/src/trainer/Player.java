@@ -1,3 +1,4 @@
+package trainer;
 import region.KantoMap;
 import region.LeagueMap;
 import Monsters.Monster;
