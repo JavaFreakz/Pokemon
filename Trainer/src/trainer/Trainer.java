@@ -1,17 +1,21 @@
 package trainer;
+import java.util.List;
+
 import region.Direction;
 import region.Location;
 import Monsters.Monster;
+import Monsters.Monster.AfflictionTypes;
 
 
 public class Trainer {
 
 	private String name;
-	private Monster[] bench = {null,null,null,null,null,null};
+	private Monster[] party = {null,null,null,null,null,null};
 	private int pokeDollars;
 	private Location currentPos;
 	private Direction facing;
 	private TrainerType type;
+	private int currentBenchPos;  // index of currently active monster from the party
 	
 	public enum TrainerType {
 		Player,
@@ -37,14 +41,15 @@ public class Trainer {
 		initialize(typ, nam, loot, pos, dir, party);
 	}
 
-	protected void initialize(TrainerType typ, String nam, int loot, Location pos, Direction dir, Monster[] party)
+	protected void initialize(TrainerType typ, String nam, int loot, Location pos, Direction dir, Monster[] bench)
 	{
 		type = typ;
-		bench = party;
+		name = nam;
 		pokeDollars = loot;
 		currentPos = pos;
 		facing = dir;
-		bench = party;
+		party = bench;
+		currentBenchPos = 0;  // assume first pokemon is top of party
 	}
 	
 	public String getName() {
@@ -54,10 +59,45 @@ public class Trainer {
 		this.name = name;
 	}
 	public Monster[] getBench() {
-		return bench;
+		return party;
+	}
+	public int getCurrBenchPos()
+	{
+		return currentBenchPos;
 	}
 	public void setBench(Monster[] bench) {
-		this.bench = bench;
+		this.party = bench;
+		
+		// Find first non-fainted pokemon in the party
+		for(currentBenchPos = 0; currentBenchPos < bench.length; currentBenchPos++)
+		{
+			if (party[currentBenchPos].getHealth() > 0) break;
+		}
+	}
+	public void setCurrentMonster(int pos)
+	{
+		currentBenchPos = pos;
+		
+		// initialize the new monster's statistics to normal 
+		Monster mon = party[pos];
+		mon.setSpeed(mon.getNormalSpeed());
+		mon.setEvasive(mon.getNormalEvasive());
+		mon.setAttack(mon.getNormalAttack());
+		mon.setSpecialAttack(mon.getNormalSpecialAttack());
+		mon.setDefense(mon.getNormalDefense());
+		mon.setSpecialDefense(mon.getNormalSpecialDefense());
+		
+		List<AfflictionTypes> conditions = mon.getAfflictions();
+		if (conditions != null)
+		{
+			for (int i=0; i < conditions.size(); i++) 
+			{
+				if (conditions.get(i) == AfflictionTypes.CONFUSED)
+				{
+					conditions.remove(i);
+				}
+			}
+		}
 	}
 	public int getPokeDollars() {
 		return pokeDollars;

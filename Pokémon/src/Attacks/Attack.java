@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Monsters.ElementType;
+import Monsters.Monster;
 
 public class Attack {
 	
@@ -51,4 +52,60 @@ public class Attack {
 		defaultPP = pp;
 		isSpecial = special;
 	}
+	
+	public void perform(Monster initiatorMonster, Monster targetMonster)
+	{
+		// Default is to try and hit the target, taking into account accuracy, type of
+		// attack, type of initiator, type of target, target evasiveness
+		
+		float willHit = (float) (accuracy * targetMonster.getEvasive()) / (float) 10000;
+		if (willHit < 1.0) 
+		{
+			// use random to determine the success.
+			willHit = (float) (willHit * Math.random()); 
+			if (willHit <= .5) return; // a miss!
+		}
+		
+		// How much damage?. Get multipliers (initiator type, attack type, target type)
+		ElementType t1Type = initiatorMonster.getType().getElement1();
+		ElementType t2Type = initiatorMonster.getType().getElement2();
+		float multiplier = (float) 1.0;
+		if (t1Type != ElementType.NORMAL && 
+			t1Type == type)
+			multiplier *= 2.0;   // double strength when the attack type matches
+	    if (t2Type != ElementType.NORMAL &&
+	    	t2Type == type)
+	    	multiplier *= 2.0;   // second monster type matches the attack type
+	    
+	    // Normal can't hit ghost, psychic can't hit dark, electric can't hit ground,
+	    // ground can't hit flying
+	    if (type == ElementType.NORMAL || type == ElementType.FIGHTING)
+	    {
+	    	if(targetMonster.getType().getElement1() == ElementType.GHOST || 
+	           targetMonster.getType().getElement2() == ElementType.GHOST)
+	    		multiplier = (float) 0.0;
+	    }
+//	    if (type == ElementType.PSYCHIC)
+//	    {
+//	    	if(targetMonster.getType().getElement1() == ElementType.DARK || 
+//	           targetMonster.getType().getElement2() == ElementType.DARK)
+//	    		multiplier = (float) 0.0;
+//	    }
+	    if (type == ElementType.ELECTRIC)
+	    {
+	    	if(targetMonster.getType().getElement1() == ElementType.GROUND || 
+	           targetMonster.getType().getElement2() == ElementType.GROUND)
+	    		multiplier = (float) 0.0;
+	    }
+	    if (type == ElementType.GROUND)
+	    {
+	    	if(targetMonster.getType().getElement1() == ElementType.FLYING || 
+	           targetMonster.getType().getElement2() == ElementType.FLYING)
+	    		multiplier = (float) 0.0;
+	    }
+	}
+	
+	// TODO super and weak multipliers 
+	
+	// TODO calculate battle damage and apply to the target's HP
 }

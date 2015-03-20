@@ -36,14 +36,18 @@ public class Monster {
 	int health;                   // current HP
 	int fullHealth;               // full HP
 	int attack;
+	int fullAttack;
 	int specialAttack;
+	int fullSpecialAttack;
 	int defense;
-	int specialdefense;
+	int fullDefense;
+	int specialDefense;
+	int fullSpecialDefense;
 	int evasiveness;
-	Attack atk1;
-	Attack atk2;
-	Attack atk3;
-	Attack atk4;
+	int fullEvasiveness;
+	int speed;
+	int fullSpeed;
+	Attack[] moves;
 	
 	public static final String WILD_POKEMON = "wild";
 
@@ -55,5 +59,117 @@ public class Monster {
 	public String getTrainer() 
 	{
 		return originalTrainer;
+	}
+	
+	public int getSpeed()
+	{
+		return speed;
+	}
+	public void setSpeed(int spd)
+	{
+		speed = spd;
+	}
+	public int getNormalSpeed() 
+	{
+		return fullSpeed;
+	}
+	public int getMaxHp()
+	{
+		return fullHealth;
+	}
+	public int getHealth()
+	{
+		return health;
+	}
+	public void addHealth(int points)
+	{
+		if (health + points > fullHealth)
+		{
+			health = fullHealth;
+		}
+		else
+		{
+			health = health + points;
+		}
+	}
+	
+	public int getEvasive()
+	{
+		return evasiveness;
+	}
+	public void setEvasive(int val)
+	{
+		evasiveness = val;
+	}
+	public int getNormalEvasive() 
+	{
+		return fullEvasiveness;
+	}
+	
+	public int getAttack()
+	{
+		return attack;
+	}
+	public void setAttack(int val)
+	{
+		attack = val;
+	}
+	public int getNormalAttack() 
+	{
+		return fullAttack;
+	}
+	
+	public int getDefense()
+	{
+		return defense;
+	}
+	public void setDefense(int val)
+	{
+		defense = val;
+	}
+	public int getNormalDefense() 
+	{
+		return fullDefense;
+	}
+	
+	public int getSpecialAttack()
+	{
+		return specialAttack;
+	}
+	public void setSpecialAttack(int val)
+	{
+		specialAttack = val;
+	}
+	public int getNormalSpecialAttack() 
+	{
+		return fullSpecialAttack;
+	}
+	
+	public int getSpecialDefense()
+	{
+		return specialDefense;
+	}
+	public void setSpecialDefense(int val)
+	{
+		specialDefense = val;
+	}
+	public int getNormalSpecialDefense() 
+	{
+		return fullSpecialDefense;
+	}
+	
+	public List<AfflictionTypes> getAfflictions()
+	{
+		return afflictions;
+	}
+	
+	public MonsterType getMonsterType()
+	{ 
+		return type;
+	}
+	
+	public Attack[] getMoves()
+	{
+		return moves;
 	}
 }

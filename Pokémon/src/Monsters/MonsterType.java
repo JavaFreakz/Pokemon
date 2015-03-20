@@ -216,6 +216,16 @@ public class MonsterType {
 		return number;
 	}
 	
+	public ElementType getElement1()
+	{
+		return type;
+	}
+	
+	public ElementType getElement2()
+	{
+		return type2;
+	}
+	
 	public static void initialize()
 	{
 		initBulbasaur();
