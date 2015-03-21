@@ -94,7 +94,19 @@ public class Battle {
         		t2Monster.getMoves()[t2Action.moveIdx].perform(t2Monster, t1Monster);
 
         		int t1Hp = t1Monster.getHealth();
-         	}
+        		int t2Hp = t2Monster.getHealth();
+        		if (t1Hp > 0 && t2Hp == 0) return Result.T2MonsterFaint;
+        		if (t1Hp == 0 && t2Hp == 0) return Result.BothFaint;
+        		if (t1Hp == 0 && t2Hp > 0) return Result.T1MonsterFaint;
+
+        		t1Monster.getMoves()[t1Action.moveIdx].perform(t1Monster, t2Monster);
+        		
+        		t1Hp = t1Monster.getHealth();
+        		t2Hp = t2Monster.getHealth();
+        		if (t1Hp > 0 && t2Hp == 0) return Result.T2MonsterFaint;
+        		if (t1Hp == 0 && t2Hp == 0) return Result.BothFaint;
+        		if (t1Hp == 0 && t2Hp > 0) return Result.T1MonsterFaint;
+        	}
     	}
     	return ret;
     }
