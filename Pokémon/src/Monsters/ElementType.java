@@ -53,4 +53,31 @@ public class ElementType {
 			noEffect[i++] = typ;
 		}
 	}
+	
+	public boolean isWeakAgainst(ElementType type)
+	{
+		for (ElementType tgtType : weakAgainst)
+		{
+			if (type == tgtType) return true;
+		}
+		return false;
+	}
+	
+	public boolean isSuperAgainst(ElementType type)
+	{
+		for (ElementType tgtType : superAgainst)
+		{
+			if (type == tgtType) return true;
+		}
+		return false;
+	}
+	
+	public boolean canHit(ElementType type)
+	{
+		for (ElementType tgtType : noEffect)
+		{
+			if (type == tgtType) return false;
+		}
+		return true;	
+	}
 }
