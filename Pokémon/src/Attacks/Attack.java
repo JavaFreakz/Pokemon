@@ -43,7 +43,7 @@ public class Attack {
 	//SpecialEffect;
 	//inUse Video;
 	
-	private Attack(final String nam, final int acc, final int pwr, ElementType elem, final int pp, boolean special)
+	protected Attack(final String nam, final int acc, final int pwr, ElementType elem, final int pp, boolean special)
 	{
 		name = nam;
 		accuracy = acc;
@@ -103,6 +103,17 @@ public class Attack {
 		}
 		
 		// TODO calculate battle damage and apply to the target's HP
+		int defense =  targetMonster.getDefense();
+		int attack = initiatorMonster.getAttack();
+		
+		if (isSpecial) 
+		{
+			defense = targetMonster.getSpecialDefense();
+			attack = initiatorMonster.getSpecialAttack();
+		}
+		
+		int hp = targetMonster.getHealth();
+		
 	}
 
 }

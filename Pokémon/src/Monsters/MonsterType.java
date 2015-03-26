@@ -230,6 +230,7 @@ public class MonsterType {
 	{
 		initBulbasaur();
 		initIvysaur();
+		initVenusaur();
 	}
 	
 	private static void initBulbasaur()
@@ -264,6 +265,24 @@ public class MonsterType {
 		att.add(new AttackLevel(Attack.Solarbeam, 54));
 		
 		Ivysaur.setAttacks(att);
+		
+		//TODO set up possible TMs and HMs
+	}
+	
+	private static void initVenusaur()
+	{
+		List<AttackLevel> att = new ArrayList<>();
+		att.add(new AttackLevel(Attack.Tackle, 1));
+		att.add(new AttackLevel(Attack.Growl, 1));
+		att.add(new AttackLevel(Attack.LeechSeed, 1));
+		att.add(new AttackLevel(Attack.VineWhip, 1));
+		att.add(new AttackLevel(Attack.Poisonpowder, 1));
+		att.add(new AttackLevel(Attack.RazorLeaf, 1));
+		att.add(new AttackLevel(Attack.Growth, 43));
+		att.add(new AttackLevel(Attack.SleepPowder, 55));
+		att.add(new AttackLevel(Attack.Solarbeam, 65));
+		
+		Venusaur.setAttacks(att);
 		
 		//TODO set up possible TMs and HMs
 	}
