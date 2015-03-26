@@ -73,10 +73,10 @@ public class Attack {
 		float multiplier = (float) 1.0;
 		if (t1Type != ElementType.NORMAL && 
 			t1Type == type)
-			multiplier *= 2.0;   // double strength when the attack type matches user's
+			multiplier *= 1.5;   // STAB strength when the attack type matches user's
 	    if (t2Type != ElementType.NORMAL &&
 	    	t2Type == type)
-	    	multiplier *= 2.0;   // second user's monster type matches the attack type
+	    	multiplier *= 1.5;   // second user's monster type matches the attack type
 	    
 	    // Normal can't hit ghost, psychic can't hit dark, electric can't hit ground,
 	    // ground can't hit flying, etc.
@@ -102,7 +102,7 @@ public class Attack {
 			}
 		}
 		
-		// TODO calculate battle damage and apply to the target's HP
+		//  calculate battle damage and apply to the target's HP
 		int defense =  targetMonster.getDefense();
 		int attack = initiatorMonster.getAttack();
 		
@@ -112,8 +112,12 @@ public class Attack {
 			attack = initiatorMonster.getSpecialAttack();
 		}
 		
-		int hp = targetMonster.getHealth();
+		int lvl = initiatorMonster.getLevel();
+		float random = (float) (85 + Math.random()*15);
+		float damage = (((((2*lvl/5+2)*attack*power/defense)/50) +2)*multiplier*random/100);
+		int hit = (int) damage;
 		
+		targetMonster.addHealth(-hit);
 	}
 
 }

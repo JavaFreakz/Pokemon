@@ -90,6 +90,7 @@ public class Monster {
 		else
 		{
 			health = health + points;
+			if (health < 0) health = 0;
 		}
 	}
 	
@@ -171,5 +172,10 @@ public class Monster {
 	public Attack[] getMoves()
 	{
 		return moves;
+	}
+	
+	public int getLevel()
+	{
+		return monsterlvl;
 	}
 }
