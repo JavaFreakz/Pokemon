@@ -5,6 +5,7 @@ import java.util.List;
 
 import Attacks.Attack;
 import Attacks.AttackLevel;
+import Attacks.StatEffect;
 
 public class MonsterType {
 	
@@ -237,12 +238,12 @@ public class MonsterType {
 	{
 		List<AttackLevel> att = new ArrayList<>();
 		att.add(new AttackLevel(Attack.Tackle, 1));
-		att.add(new AttackLevel(Attack.Growl, 1));
+		att.add(new AttackLevel(StatEffect.Growl, 1));
 		att.add(new AttackLevel(Attack.LeechSeed, 13));
 		att.add(new AttackLevel(Attack.VineWhip, 13));
 		att.add(new AttackLevel(Attack.Poisonpowder, 20));
 		att.add(new AttackLevel(Attack.RazorLeaf, 27));
-		att.add(new AttackLevel(Attack.Growth, 34));
+		att.add(new AttackLevel(StatEffect.Growth, 34));
 		att.add(new AttackLevel(Attack.SleepPowder, 41));
 		att.add(new AttackLevel(Attack.Solarbeam, 48));
 		
@@ -255,12 +256,12 @@ public class MonsterType {
 	{
 		List<AttackLevel> att = new ArrayList<>();
 		att.add(new AttackLevel(Attack.Tackle, 1));
-		att.add(new AttackLevel(Attack.Growl, 1));
+		att.add(new AttackLevel(StatEffect.Growl, 1));
 		att.add(new AttackLevel(Attack.LeechSeed, 1));
 		att.add(new AttackLevel(Attack.VineWhip, 13));
 		att.add(new AttackLevel(Attack.Poisonpowder, 22));
 		att.add(new AttackLevel(Attack.RazorLeaf, 30));
-		att.add(new AttackLevel(Attack.Growth, 38));
+		att.add(new AttackLevel(StatEffect.Growth, 38));
 		att.add(new AttackLevel(Attack.SleepPowder, 46));
 		att.add(new AttackLevel(Attack.Solarbeam, 54));
 		
@@ -273,12 +274,12 @@ public class MonsterType {
 	{
 		List<AttackLevel> att = new ArrayList<>();
 		att.add(new AttackLevel(Attack.Tackle, 1));
-		att.add(new AttackLevel(Attack.Growl, 1));
+		att.add(new AttackLevel(StatEffect.Growl, 1));
 		att.add(new AttackLevel(Attack.LeechSeed, 1));
 		att.add(new AttackLevel(Attack.VineWhip, 1));
 		att.add(new AttackLevel(Attack.Poisonpowder, 1));
 		att.add(new AttackLevel(Attack.RazorLeaf, 1));
-		att.add(new AttackLevel(Attack.Growth, 43));
+		att.add(new AttackLevel(StatEffect.Growth, 43));
 		att.add(new AttackLevel(Attack.SleepPowder, 55));
 		att.add(new AttackLevel(Attack.Solarbeam, 65));
 		

@@ -5,6 +5,7 @@ import java.util.List;
 
 import Attacks.Attack;
 import Attacks.AttackLevel;
+import Attacks.StatEffect;
 
 public class ClefairyType extends EvolvesWithItems {
 
@@ -20,7 +21,7 @@ public class ClefairyType extends EvolvesWithItems {
 		
 		List<AttackLevel> att = new ArrayList<>();
 		att.add(new AttackLevel(Attack.Pound, 1));
-		att.add(new AttackLevel(Attack.Growl, 1));
+		att.add(new AttackLevel(StatEffect.Growl, 1));
 		att.add(new AttackLevel(Attack.Encore, 1));
 		att.add(new AttackLevel(Attack.Sing, 13));
 		att.add(new AttackLevel(Attack.Doubleslap, 18));

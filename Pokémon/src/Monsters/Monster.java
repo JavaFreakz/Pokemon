@@ -94,6 +94,11 @@ public class Monster {
 		}
 	}
 	
+	public int getNormalHealth()
+	{
+		return fullHealth;
+	}
+	
 	public int getEvasive()
 	{
 		return evasiveness;
