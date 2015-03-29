@@ -183,4 +183,8 @@ public class Monster {
 	{
 		return monsterlvl;
 	}
+
+	public StatusCondition getStatus() {
+		return status;
+	}
 }
