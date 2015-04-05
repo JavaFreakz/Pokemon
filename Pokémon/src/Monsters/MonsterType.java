@@ -183,7 +183,7 @@ public class MonsterType {
 		return number;
 	}
 	
-	private MonsterType() {}
+	protected MonsterType() {}
 	
 	protected MonsterType(int id, String nam, ElementType elem1, ElementType elem2,int becomes, int lvlAt)
 	{
