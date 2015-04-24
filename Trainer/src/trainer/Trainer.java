@@ -91,12 +91,12 @@ public class Trainer {
 		if (conditions != null)
 		{
 			for (int i=0; i < conditions.size(); i++) 
-			{
+			//{
 				if (conditions.get(i) == AfflictionTypes.CONFUSED)
-				{
+				//{
 					conditions.remove(i);
-				}
-			}
+				//}
+			//}
 		}
 	}
 	public int getPokeDollars() {
